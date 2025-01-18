@@ -72,7 +72,7 @@ def start_message(message):
 
 @bot.message_handler(commands=['help'])
 def help_message(message):
-    bot.send_message(message.chat.id, "✨ <b>Мои команды</b>\n\n/start - перезапуск\n/img - генерация изображений\n/mode - выбор модели\n/reset - сбросить контекст\n/help - справка", parse_mode='HTML')
+    bot.send_message(message.chat.id, "✨ <b>Мои команды</b>\n\n/start - перезапуск\n/mode - выбор модели\n/reset - сбросить контекст\n/help - справка", parse_mode='HTML')
 
 @bot.message_handler(commands=['mode'])
 def model_command(message):
